@@ -5,6 +5,7 @@ const sectionBtns = document.querySelectorAll(".control");
 
 
 
+
 function pageTransition(){
     for(let i = 0; i <= sectionBtns.length; i++){
         sectionBtns[i].addEventListener("click", () => {
@@ -14,8 +15,17 @@ function pageTransition(){
             sectionBtns[i].classList.add("active-btn")
         })
     }
-}
 
+    
+
+ 
+}
+    // toggle theme
+    const toggleBtn = document.querySelector(".theme-btn")
+    toggleBtn.addEventListener("click", () =>{
+    let element = document.body;
+    element.classList.toggle("light-mode")
+})
 pageTransition()
 
 
