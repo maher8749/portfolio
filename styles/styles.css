@@ -22,8 +22,8 @@
 }
 
 .light-mode {
-  --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-primary: #f3ecec;
+  --color-secondary: #f8be8e;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -198,7 +198,7 @@ section {
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100%;
+  min-height: 100vh;
 }
 .header-content .left-header {
   display: flex;
@@ -217,7 +217,7 @@ section {
 }
 .header-content .left-header .image {
   height: 60%;
-  width: 100%;
+  width: 70%;
   margin-top: 40px;
   border-radius: var(--br-sm-2);
   margin-left: 3rem;
@@ -731,4 +731,41 @@ section {
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 3.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 0 !important;
+  }
+  .theme-btn {
+    height: 40px;
+    width: 40px;
+  }
+  .header-content {
+    grid-template-columns: 1fr;
+  }
+  .left-header .h-shape {
+    display: none;
+  }
+  .left-header .image {
+    margin-left: 4rem !important;
+  }
+  .controls {
+    top: auto;
+    bottom: 3%;
+    left: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #2a2e35;
+  }
+  .controls .control {
+    margin: 1rem 0.3rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

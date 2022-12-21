@@ -16,9 +16,6 @@ function pageTransition(){
         })
     }
 
-    
-
- 
 }
     // toggle theme
     const toggleBtn = document.querySelector(".theme-btn")

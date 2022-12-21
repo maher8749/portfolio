@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -27,8 +29,8 @@
 
 // toggle theme 
 .light-mode{
-    --color-primary: #FFFFFF;
-    --color-secondary: #F56692;
+    --color-primary: #f3ecec;
+    --color-secondary: #f8be8e;
     --color-white: #454e56;
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -188,7 +190,7 @@ section{
 .header-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 100%;
+    min-height: 100vh;
     .left-header{
         display: flex;
         align-items: center;
@@ -206,7 +208,7 @@ section{
         }
             .image{
                 height: 60%;
-                width: 100%;
+                width: 70%;
                 margin-top: 40px;
                 border-radius: var(--br-sm-2);
                 margin-left: 3rem;
@@ -765,3 +767,7 @@ section{
         
     }
 }
+
+
+
+@import "./media.scss";

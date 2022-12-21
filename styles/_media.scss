@@ -1,0 +1,41 @@
+@media screen and (max-width: 600px) {
+    header{
+        padding: 0;
+    }
+    header .right-header{
+        padding: 0 !important;
+    }
+
+    .theme-btn{
+        height: 40px;
+        width: 40px;
+    }
+    .header-content{
+        grid-template-columns: 1fr;
+        
+    }
+    .left-header{
+        .h-shape{
+            display: none;
+        }
+        .image{
+            margin-left: 4rem !important ;
+        }
+    }
+    .controls{
+        top: auto;
+        bottom: 3%;
+        left: 50%;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: #2a2e35 ;
+        .control{
+            margin: 1rem .3rem;
+        }
+    }
+}
+
